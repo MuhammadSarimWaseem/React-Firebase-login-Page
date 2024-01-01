@@ -56,8 +56,8 @@ function App() {
         Email:<input required name='email' onChange={InputHandler} placeholder='Enter your Email' type='email' value={input.email} ></input><br />
         Password:<input required name='password' onChange={InputHandler} placeholder='Enter your Password' type="current-password" value={input.password} /><br />
         <button onClick={Login}>Login</button>
+        {message && <div className="message">{message}</div>}
       </form>
-      {message && <div className="message">{message}</div>}
     </Fragment>
   );
 }
